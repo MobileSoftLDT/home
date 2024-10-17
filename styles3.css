@@ -1,0 +1,103 @@
+/* --- Estilos Generales --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(images/luces-neon-degradadas-abstractas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* --- Sección Sobre Nosotros --- */
+.about-us {
+    background-color: rgba(50, 50, 50, 0.6);
+    padding: 50px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+/* Estilos para la lista de Sobre Nosotros */
+.about-list {
+    list-style: none; /* Elimina las viñetas predeterminadas */
+    padding-left: 0; /* Elimina el padding izquierdo */
+}
+
+.about-item {
+    position: relative; /* Para posicionar la viñeta personalizada */
+    padding-left: 30px; /* Espacio para la viñeta */
+    margin-bottom: 30px; /* Espaciado entre elementos */
+}
+
+.about-item::before {
+    content: '•'; /* Carácter de viñeta */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
+    color: #007bff; /* Color de la viñeta */
+    line-height: 1;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer .list-inline-item {
+    margin: 0 10px;
+}
+
+/* --- Responsividad --- */
+@media (max-width: 768px) {
+    .about-item {
+        padding-left: 25px;
+    }
+
+    .about-item::before {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us h2 {
+        font-size: 2rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .about-item::before {
+        font-size: 1.2rem;
+    }
+}

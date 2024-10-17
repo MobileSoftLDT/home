@@ -1,0 +1,30 @@
+body {
+    background-image: url('images/luces-neon-degradadas-abstractas.jpg'); /* Fondo de la página principal */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* La imagen se queda fija mientras haces scroll */
+    color: white; /* Color de texto en blanco */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin padding */
+    font-family: 'Arial', sans-serif; /* Fuente */
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.icon {
+    font-size: 50px; /* Tamaño de los iconos */
+    margin: 20px; /* Espaciado entre los iconos */
+    color: #007bff; /* Color de los iconos */
+    transition: transform 0.3s; /* Transición para el efecto de hover */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
